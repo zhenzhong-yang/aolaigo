@@ -1,0 +1,100 @@
+header{
+    height:120px;
+    padding-top:35px;
+    div{
+        display:inline-block;
+    }
+    ul{
+        float:right;
+        li{
+            float:left;
+            width:240px;
+            p{
+                font-size:20px;
+                color:#D61518;
+            }
+            img{
+                float:left;
+                margin-right:10px;
+            }
+        }
+    }
+}
+main{
+    >.main_l{display:inline-block;cursor: pointer;}
+    >.main_r{
+        width:350px;
+        height:500px;
+        border:1px solid #ccc;
+        float:right;
+        // margin-top:75px;
+        >p{
+            height:52px;
+            font-size:14px;
+            line-height:52px;
+            padding-left:20px;
+            background-color:#F5F5F5;
+            a{display:inline-block;margin-right:20px;color:orange;float:right;}
+            a:hover{color:#FF7800;}
+        }
+        label{
+            margin-left:10px;
+        }
+        input{
+            width:200px;
+            height:42px;
+            border:1px solid #ccc;
+            border-radius:10px;
+            margin:20px 0;
+            padding-left:10px;
+        }
+        #text{
+            width:150px;
+        }
+        .code{
+            display:inline-block;
+            width:75px;
+            height:32px;
+            border:1px solid #ccc;
+            vertical-align: middle;
+            border-radius:5px;
+            text-align:center;
+            line-height:32px;
+        }
+        button{
+            width:240px;
+            height:40px;
+            background-color:#C81417;
+            border-radius:10px;
+            color:#fff;
+            margin:10px 50px;
+            cursor: pointer;
+        }
+        .c{
+            width:13px;
+            height:13px;
+            margin-left:200px;
+        }
+        a{
+            display:inline-block;
+            font-size:12px;
+        }
+    }
+}
+.footer_bottom{
+    height:175px;
+    border-top:1px solid #ccc;
+    text-align:center;
+    font-size:14px;
+    color:#666666;
+    a{color:#666666;}
+    >p{
+        margin-top:20px;
+        >span:nth-child(1){border:none;}
+        span{
+            border-left:1px solid #666666;
+            padding: 0 10px;
+
+        }
+    }
+}

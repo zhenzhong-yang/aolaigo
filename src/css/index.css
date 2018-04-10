@@ -1,0 +1,9 @@
+.main {
+  width: 100%;
+  background-color: #F0F0F0;
+  padding-bottom: 26px;
+}
+
+.main > div img {
+  width: 100%;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>购物车</title>
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/cart.css" />
+        <link rel="stylesheet" type="text/css" href="../css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="../font/iconfont.css" />
+        
+        <script type="text/javascript" src="../js/require.js" data-main="../js/cart.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="head_top">
+                <div class="container">
+                    <ul class="HT_left">
+                            <li class="HT_left_l">
+                                <a href="javascript:void(0);">奥特莱斯购物中心</a>
+                                <ul>
+                                    <li><a href="">深圳华盛奥特莱斯</a></li>
+                                    <li><a href="">南宁华盛奥特莱斯</a></li>
+                                    <li><a href="">南昌华盛奥特莱斯</a></li>
+                                    <li><a href="">西安华盛奥特莱斯</a></li>
+                                    <li><a href="">郑州华盛奥特莱斯</a></li>
+                                    <li><a href="">哈尔滨华盛奥特莱斯</a></li>
+                                    <li><a href="">重庆华盛奥特莱斯</a></li>
+                                    <li><a href="">合肥华盛奥特莱斯</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">商家入驻</a></li>
+                    </ul>
+                    <ul class="HT_right">
+                        <li>您好,欢迎来到奥莱购</li>
+                        <li><a href="../html/login.html" id="user" style="color:#C81417;font-weight:bold;">请登录</a></li>
+                        <li><a href="../html/register.html">免费注册</a></li>
+                        <li>
+                            <span class="icon iconfont icon-gouwuche"></span>
+                            <a href="../html/cart.html">购物车</a>
+                            <span>0</span>
+                        </li>
+                        <li><a href="">订单查询</a></li>
+                        <li><a href="">我的收藏</a></li>
+                        <li><a href="">帮助中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart_header_bottom">
+                <div class="container">
+                    <div class="cart_header_bottom_l">
+                        <a href="../index.html">
+                            <img src="../images/logo.png" height="74" width="192" alt="" />
+                        </a>
+                        <img src="../images/cart-ft.jpg" height="68" width="240" alt="" />
+                    </div>
+                    <div class="cart_header_bottom_r">
+                        <input type="text" />
+                        <button class="btn">搜索</button>
+                    </div>
+                </div>
+                
+            </div>
+        </header>
+        <div class="container">
+            <main class="cart_main">
+                <span class="cart_main_top">商品清单</span>
+                <div class="cart_main_center">
+                    <table>
+                        <tbody>
+                            <tr style="background-color:#FAFAFA;">
+                                <th width="60">全选</th>
+                                <th width="540">订单商品</th>
+                                <th width="120">单价</th>
+                                <th width="120">数量</th>
+                                <th width="120">优惠</th>
+                                <th width="120">小计</th>
+                                <th width="120">操作</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="td_two">
+                                    <a href=""><img src="../images/d1.jpg" height="60" width="60" alt="" /></a>
+                                    <p>[支持自提] NEW LOOK 休闲夹克牛仔马夹</p>
+                                    <span>黑色</span>
+                                </td>
+                                <td>¥249.00</td>
+                                <td></td>
+                                <td>¥0.00</td>
+                                <td>¥1245.00</td>
+                                <td><button>删除</button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                                <td class="td_two">
+                                    <a href=""><img src="../images/d1.jpg" height="60" width="60" alt="" /></a>
+                                    <p>[支持自提] NEW LOOK 休闲夹克牛仔马夹</p>
+                                    <span>黑色</span>
+                                </td>
+                                <td>¥249.00</td>
+                                <td></td>
+                                <td>¥0.00</td>
+                                <td>¥1245.00</td>
+                                <td><button>删除</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart_main_bottom">
+                    <input type="checkbox" />全选
+                    <button id="qingkong">清空</button>
+                    <button id="jiesuan">去结算</button>
+                </div>
+            </main>
+        </div>
+        <footer></footer>
+        <!-- <script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="../js/cart.js"></script> -->
+    </body>
+</html>

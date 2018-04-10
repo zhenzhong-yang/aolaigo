@@ -1,0 +1,147 @@
+header{
+    width:100%;
+    height:200px;
+    // border-bottom:1px solid #ccc;
+    .head_top{
+        width:100%;
+        height:46px;
+        line-height:46px;
+        color:#7E7E7E;
+        background-color:#F0F0F0;
+        a{color:#7E7E7E;}
+        .HT_left{
+            text-align:center;
+            float:left;
+            .HT_left_l{
+                position:relative;
+            }
+            >li{
+                float:left;
+                font-size:15px;
+                margin-right:20px;
+                >ul{
+                    width:150px;
+                    border:1px solid #ccc;
+                    position:absolute;
+                    display:none;
+                    background-color:#fff;
+                    >li{
+                        height:40px;
+                        border-bottom:1px solid #ccc;
+                        font-size:14px;
+                    }
+                }
+            }
+            >li:nth-child(1):hover>ul{
+                display:block;
+            }
+        }
+        .HT_right{
+            float:right;
+            >li{
+                float:left;
+                font-size:15px;
+                margin-left:20px;
+                span{
+                    display:inline-block;
+                    width:20px;
+                    color:#C81417;
+                }
+            }
+        }
+    }
+    .cart_header_bottom{
+        height:74px;
+        margin-top:20px;
+        // background-color:orange;
+        .cart_header_bottom_l{
+            display:inline-block;
+        }
+        .cart_header_bottom_r{
+            display:inline-block;
+            margin-left:190px;
+            input{
+                width:380px;
+                height:38px;
+                border:1px solid #C81417;
+                border-radius:5px;
+                vertical-align:bottom;
+            }
+            .btn{
+                display:inline-block;
+                width:80px;
+                height:38px;
+                background-color:#C81417;
+                text-align:center;
+                line-height:38px;
+                margin-left:-4px;
+                border-radius:5px;
+                font-size:24px;
+                color:#fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.cart_main{
+    .cart_main_top{
+        display:block;
+        width:122px;
+        text-align:center;
+        border-bottom:4px solid #D61417;
+    }
+    .cart_main_center{
+        >table{
+            width:1100px;
+            // height:125px;
+            border:1px solid #ccc;
+            // background-color:orange;
+            margin:20px 0;
+            tbody{
+                tr{
+                    text-align:center;
+                    border:1px solid #FAFAFA;
+                    .td_two{
+                        text-align:left;
+                    }
+                    td{
+                        font-size:14px;
+                        p{margin:10px 0;}
+                        span{color:#999999;}
+                        a{
+                            display:inline-block;
+                            margin-right:10px;
+                            float:left;
+                        }
+                        button{
+                            width:50px;
+                            height:30px;
+                            color:#fff;
+                            background-color:#FF3344;
+                            border-radius:10px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cart_main_bottom{
+        height:90px;
+        background-color:#F5F5F5;
+        text-align:center;
+        line-height:90px;
+        font-size:14px;
+        >input{margin-right:20px;}
+        >button{
+            width:120px;
+            height:45px;
+            line-height:45px;
+            font-size:18px;
+            color:#fff;
+            background-color:#FF3344;
+            margin-left:32px;
+            border-radius:10px;
+        }
+    }
+}

@@ -1,0 +1,139 @@
+header {
+  height: 120px;
+  padding-top: 35px;
+}
+
+header div {
+  display: inline-block;
+}
+
+header ul {
+  float: right;
+}
+
+header ul li {
+  float: left;
+  width: 240px;
+}
+
+header ul li p {
+  font-size: 20px;
+  color: #D61518;
+}
+
+header ul li img {
+  float: left;
+  margin-right: 10px;
+}
+
+main > div {
+  display: inline-block;
+}
+
+main .main_right {
+  width: 340px;
+  height: 377px;
+  border: 1px solid #ccc;
+  float: right;
+  margin-top: 75px;
+}
+
+main .main_right p {
+  height: 52px;
+  font-size: 14px;
+  line-height: 52px;
+}
+
+main .main_right p a {
+  margin-left: 20px;
+  color: orange;
+}
+
+main .main_right p a:hover {
+  color: #FF7800;
+}
+
+main .main_right input {
+  margin-left: 40px;
+}
+
+main .main_right .input {
+  width: 242px;
+  height: 42px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 30px;
+  padding-left: 10px;
+}
+
+main .main_right span {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+main .main_right span a {
+  display: inline-block;
+  font-size: 12px;
+}
+
+main .main_right button {
+  width: 240px;
+  height: 40px;
+  background-color: #C81417;
+  border-radius: 10px;
+  color: #fff;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+
+main .main_right > a {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+main .main_right ul {
+  height: 30px;
+  margin-top: 10px;
+}
+
+main .main_right ul li {
+  float: left;
+  margin-left: 80px;
+}
+
+main .main_right ul li img {
+  height: 30px;
+  width: 30px;
+}
+
+main .main_right ul li .p {
+  height: 30px;
+  line-height: 30px;
+}
+
+.footer_bottom {
+  height: 175px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+.footer_bottom a {
+  color: #666666;
+}
+
+.footer_bottom > p {
+  margin-top: 20px;
+}
+
+.footer_bottom > p > span:nth-child(1) {
+  border: none;
+}
+
+.footer_bottom > p span {
+  border-left: 1px solid #666666;
+  padding: 0 10px;
+}

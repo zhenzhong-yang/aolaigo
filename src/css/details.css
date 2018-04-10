@@ -1,0 +1,160 @@
+.details_main .DM_top {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #ccc;
+}
+
+.details_main .DM_top dl {
+  font-size: 14px;
+}
+
+.details_main .DM_top dl dt {
+  float: left;
+}
+
+.details_main .DM_top dl dd {
+  float: left;
+}
+
+.details_main .DM_bottom {
+  margin-top: 2px;
+}
+
+.details_main .DM_bottom .DM_bottom_left {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 51px;
+}
+
+.details_main .DM_bottom .DM_bottom_left > a {
+  display: block;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.details_main .DM_bottom .DM_bottom_left > ul {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.details_main .DM_bottom .DM_bottom_left > ul li {
+  margin-top: 15px;
+}
+
+.details_main .DM_bottom .DM_bottom_left .goods {
+  display: inline-block;
+}
+
+.details_main .DM_bottom .DM_bottom_left .DM_bottom_left_b {
+  float: left;
+  margin-bottom: 21px;
+}
+
+.details_main .DM_bottom .DM_bottom_left .DM_bottom_left_b > li {
+  float: left;
+  margin-left: 32px;
+  font-size: 14px;
+}
+
+.details_main .DM_bottom .DM_bottom_center {
+  display: inline-block;
+  width: 505px;
+  vertical-align: top;
+  margin-top: 51px;
+  padding-left: 32px;
+}
+
+.details_main .DM_bottom .DM_bottom_center > p:nth-child(2) {
+  height: 52px;
+  background-color: #F7F7F7;
+  line-height: 52px;
+}
+
+.details_main .DM_bottom .DM_bottom_center > p {
+  font-size: 16px;
+  color: #667DB7;
+  margin-top: 14px;
+}
+
+.details_main .DM_bottom .DM_bottom_center > p > span {
+  font-size: 12px;
+}
+
+.details_main .DM_bottom .DM_bottom_center > p > em {
+  font-size: 20px;
+  color: #C81417;
+}
+
+.details_main .DM_bottom .DM_bottom_center > p > del {
+  color: #C9B8B8;
+}
+
+.details_main .DM_bottom .DM_bottom_center > p input {
+  width: 80px;
+  height: 25px;
+  border: 1px solid #ccc;
+}
+
+.details_main .DM_bottom .DM_bottom_center > p button {
+  width: 140px;
+  height: 40px;
+  background-color: #FF3344;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.details_main .DM_bottom .DM_bottom_center ul {
+  margin-top: 14px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.details_main .DM_bottom .DM_bottom_center ul li {
+  float: left;
+  font-size: 14px;
+}
+
+.details_main .DM_bottom .DM_bottom_center ul li span {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid #C81417;
+  cursor: pointer;
+}
+
+.details_main .DM_bottom .DM_bottom_center dl {
+  font-size: 14px;
+  color: #999999;
+  padding-top: 40px;
+  margin-top: 22px;
+  border-top: 1px dotted #ccc;
+}
+
+.details_main .DM_bottom .DM_bottom_center dl .icon {
+  color: #C81417;
+}
+
+.details_main .DM_bottom .DM_bottom_center dl dt {
+  float: left;
+}
+
+.details_main .DM_bottom .DM_bottom_center dl dd {
+  float: left;
+}
+
+.details_main .DM_bottom .DM_bottom_right {
+  display: inline-block;
+  margin-top: 51px;
+  overflow: hidden;
+  height: 475px;
+}
+
+.details_main .DM_bottom .DM_bottom_right p {
+  height: 23px;
+  text-align: center;
+  font-size: 14px;
+}
