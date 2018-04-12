@@ -23,7 +23,7 @@ require(['config'],function(){
                     }else if(password === ""){
                         alert("密码不能为空");
                     }else{
-                        $.session.remove();
+                        $.session.remove('goodsNumber');
                         $.session.set('username',username);
                         $.ajax({
                             type:'get',
@@ -38,12 +38,11 @@ require(['config'],function(){
                                     goodsNumber += (val.goodsnum)*1;
                                     console.log(goodsNumber);
                                     $.session.set('goodsNumber',goodsNumber);
-                                    location.href = '../index.html?id='+username;
                                 });
+                                location.href = '../index.html?id='+username;
                             }
                         });
                         
-                        // alert('OK');
                     }
                 }
             });

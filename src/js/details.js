@@ -24,8 +24,11 @@ require(['config'],function(){
             var id = getUrlParam('goodsid');
             console.log('id:'+id);
             let tupian;
+            console.log(tupian);
+            let qty;
             $.ajax({
                  type:'get',
+                data:{'qty':''},
                  url:'../api/goodslist.php',
                  dataType:'json',
                  success:function(res,status){
