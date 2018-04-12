@@ -19,20 +19,22 @@ require(['config'],function(){
         });
 
         let qty = 18;
-        let num = 17;
 
         /*发起请求*/
-        $.ajax({
-            type:'get',
-            data:{'qty':qty},
-            url:'../api/goodslist.php',
-            dataType:'json',
-            success:function(res){
-                console.log(res);
-                add(res);
+        function sendAjax(){
+            $.ajax({
+                type:'get',
+                data:{'qty':qty},
+                url:'../api/goodslist.php',
+                dataType:'json',
+                success:function(res){
+                    console.log(res);
+                    add(res);
+                }
+            });
+        }
+        sendAjax();
 
-            }
-        });
 
         /*把商品写入页面*/
         function add(res){
@@ -58,60 +60,155 @@ require(['config'],function(){
                 }
                 $('#page').append(span);
             }
+            active();
         }
 
-        /*点击高亮*/
-        $('#page').on('click','span',function(){
-            console.log($(this).html());
-            let pageNo = $(this).html();
-            $.ajax({
-                type:'get',
-                data:{'qty':qty,'page':pageNo},
-                url:'../api/goodslist.php',
-                dataType:'json',
-                success:function(res){
-                    console.log(res);
-                    add(res);
-                }
+
+        function active(){
+            /*点击高亮*/
+            $('#page').on('click','span',function(){
+                console.log($(this).html());
+                let pageNo = $(this).html();
+                $.ajax({
+                    type:'get',
+                    data:{'qty':qty,'page':pageNo},
+                    url:'../api/goodslist.php',
+                    dataType:'json',
+                    success:function(res){
+                        console.log(res);
+                        add(res);
+                    }
+                });
             });
+        }
+
+
+
+
+        $('#zong').on('click',function(){
+            sendAjax();
+            active();
+            $('#page').show();
         });
 
+        let num = 17;
 
-        /*价格排序*/
+
+        
         $('dl').on('click','dd',function(){
             console.log(666);
             $(this).addClass('dd');
             $(this).siblings('dd').removeClass('dd');
-            // $('#jiapai').find('i').hide();
         });
 
+        /*时间排序*/
+        let dianji = 1;
         $('#shipai').on('click',function(){
             console.log($(this));
             let dis = $(this);
             dis.find('i').show();
-            $.ajax({
-                type:'get',
-                data:{'num':num},
-                url:'../api/goodslist.php',
-                dataType:'json',
-                success:function(res){
-                    console.log(res);
-                    add(res);
-                    // $('#goodslist').html(res.map(function(item){
-                    //     console.log(item);
-                    //     return `<li>
-                    //         <a href='details.html?goodsid=${item.goods_id}'><img src="${item.goods_imgurl}"/></a>
-                    //         <p><span>￥${item.goods_price}</span><del>￥${item.goods_yuanjia}</del></p>
-                    //         <p>${item.goods_name}</p>
-                    //     </li>`
-                    // }));
-                }
-            });
+            let pai = 'pai';
+            if(dianji == 1){
+                $.ajax({
+                    type:'get',
+                    data:{'num':num,'pai':pai},
+                    url:'../api/time.php',
+                    dataType:'json',
+                    success:function(res){console.log(666);
+                        console.log(res);
+                        hasPai(res);
+                    }
+                });
+                $('#page').hide();
+                $('#shipai').find('img').attr('src','../images/jiang.png');
+                dianji = 2;
+            }else{
+                $.ajax({
+                    type:'get',
+                    data:{'num':num,'pai':''},
+                    url:'../api/time.php',
+                    dataType:'json',
+                    success:function(res){console.log(666);
+                        console.log(res);
+                        hasPai(res);
+                    }
+                });
+                $('#page').hide();
+                $('#shipai').find('img').attr('src','../images/sheng.png');
+                dianji = 1;
+            }
             dis.siblings('dd').on('click',function(){
                 console.log(123456);
                 dis.find('i').hide();
             });
         });
+
+        /*价格排序*/
+        $('#jiapai').on('click',function(){
+            console.log($(this));
+            let dis = $(this);
+            dis.find('i').show();
+            let pai = 'pai';
+            if(dianji == 1){
+                $.ajax({
+                    type:'get',
+                    data:{'num':num,'pai':''},
+                    url:'../api/price.php',
+                    dataType:'json',
+                    success:function(res){console.log(666);
+                        console.log(res);
+                        hasPai(res);
+                    }
+                });
+                $('#page').hide();
+                $('#jiapai').find('img').attr('src','../images/sheng.png');
+                dianji = 2;
+            }else{
+                $.ajax({
+                    type:'get',
+                    data:{'num':num,'pai':pai},
+                    url:'../api/price.php',
+                    dataType:'json',
+                    success:function(res){console.log(666);
+                        console.log(res);
+                        hasPai(res);
+                    }
+                });
+                $('#page').hide();
+                $('#jiapai').find('img').attr('src','../images/jiang.png');
+                dianji = 1;
+            }
+            dis.siblings('dd').on('click',function(){
+                console.log(123456);
+                dis.find('i').hide();
+            });
+        });
+
+    function hasPai(res){
+        $('#goodslist').html(res.map(function(item){
+            console.log(item);
+            return `<li>
+                <a href='details.html?goodsid=${item.goods_id}'><img src="${item.goods_imgurl}"/></a>
+                <p><span>￥${item.goods_price}</span><del>￥${item.goods_yuanjia}</del></p>
+                <p>${item.goods_name}</p>
+            </li>`
+        }));
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         $('footer').load('../html/footer.html');
         
