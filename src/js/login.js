@@ -4,6 +4,7 @@
 require(['config'],function(){
     require(['jQuery','jquerySession'],function(){
         let btn_deng = $('#btn_deng');
+        let goodsNumber = 0;
         btn_deng.on('click',function(){
             let username = $('#username').val();console.log(username);
             let password = $('#password').val();console.log(password);console.log(666);
@@ -22,8 +23,27 @@ require(['config'],function(){
                     }else if(password === ""){
                         alert("密码不能为空");
                     }else{
+                        $.session.remove();
                         $.session.set('username',username);
-                        location.href = '../index.html?id='+username;
+                        $.ajax({
+                            type:'get',
+                            data:{'username':username},
+                            url:'../api/cart.php',
+                            dataType:'json',
+                            success:function(da){
+
+                                console.log(da);
+
+                                da.map(function(val){
+                                    goodsNumber += (val.goodsnum)*1;
+                                    console.log(goodsNumber);
+                                    $.session.set('goodsNumber',goodsNumber);
+                                    location.href = '../index.html?id='+username;
+                                });
+                            }
+                        });
+                        
+                        // alert('OK');
                     }
                 }
             });

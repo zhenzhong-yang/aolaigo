@@ -38,7 +38,7 @@
                         <li>
                             <span class="icon iconfont icon-gouwuche"></span>
                             <a href="../html/cart.html">购物车</a>
-                            <span>0</span>
+                            <input type="text" class="goodsNum" value="0"  placeholder="0"/>
                         </li>
                         <li><a href="">订单查询</a></li>
                         <li><a href="">我的收藏</a></li>
@@ -67,7 +67,7 @@
                 <span class="cart_main_top">商品清单</span>
                 <div class="cart_main_center">
                     <table>
-                        <tbody>
+                        <thead>
                             <tr style="background-color:#FAFAFA;">
                                 <th width="60">全选</th>
                                 <th width="540">订单商品</th>
@@ -77,41 +77,13 @@
                                 <th width="120">小计</th>
                                 <th width="120">操作</th>
                             </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td class="td_two">
-                                    <a href=""><img src="../images/d1.jpg" height="60" width="60" alt="" /></a>
-                                    <p>[支持自提] NEW LOOK 休闲夹克牛仔马夹</p>
-                                    <span>黑色</span>
-                                </td>
-                                <td>¥249.00</td>
-                                <td></td>
-                                <td>¥0.00</td>
-                                <td>¥1245.00</td>
-                                <td><button>删除</button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" />
-                                </td>
-                                <td class="td_two">
-                                    <a href=""><img src="../images/d1.jpg" height="60" width="60" alt="" /></a>
-                                    <p>[支持自提] NEW LOOK 休闲夹克牛仔马夹</p>
-                                    <span>黑色</span>
-                                </td>
-                                <td>¥249.00</td>
-                                <td></td>
-                                <td>¥0.00</td>
-                                <td>¥1245.00</td>
-                                <td><button>删除</button></td>
-                            </tr>
-                        </tbody>
+                        </thead>
+                        <tbody></tbody>
                     </table>
                 </div>
                 <div class="cart_main_bottom">
                     <input type="checkbox" />全选
+                    <span>总计：<em id="total" >￥0</em></span>
                     <button id="qingkong">清空</button>
                     <button id="jiesuan">去结算</button>
                 </div>

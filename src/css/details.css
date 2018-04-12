@@ -16,6 +16,10 @@
   float: left;
 }
 
+.details_main .DM_top dl dd a {
+  color: #667DB7;
+}
+
 .details_main .DM_bottom {
   margin-top: 2px;
 }
@@ -81,7 +85,7 @@
   font-size: 12px;
 }
 
-.details_main .DM_bottom .DM_bottom_center > p > em {
+.details_main .DM_bottom .DM_bottom_center > p strong {
   font-size: 20px;
   color: #C81417;
 }

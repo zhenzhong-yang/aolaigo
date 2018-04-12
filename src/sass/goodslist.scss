@@ -89,6 +89,8 @@
                     padding:15px 20px 0 20px;
                     >li{
                         text-align:center;
+                        transition:box-shadow 0.2s;
+                        margin-top:5px;
                         p{
                             font-size:12px;
                             margin:10px 0;
@@ -99,6 +101,7 @@
                             font-weight:bold;
                         }
                     }
+                    li:hover{box-shadow:0 5px 5px 5px #ccc;}
                 }
             }
             .news{
@@ -120,6 +123,8 @@
                     padding:15px 20px 0 20px;
                     >li{
                         text-align:center;
+                        transition:box-shadow 0.2s;
+                        margin-top:5px;
                         p{
                             font-size:12px;
                             margin:10px 0;
@@ -130,6 +135,7 @@
                             font-weight:bold;
                         }
                     }
+                    li:hover{box-shadow:0 5px 5px 8px #ccc;}
                 }
             }
         }
@@ -145,20 +151,30 @@
                 dt{float:left;padding:0 10px;}
                 dd{
                     float:left;
-                    border:1px solid #ccc
-                    ;height:26px;
+                    border:1px solid #ccc;
+                    height:28px;
                     line-height:26px;
-                    margin: 8px auto;
+                    margin: 6px auto;
                     padding:0 16px;
+                    cursor:pointer;
+                    position:relative;
+                    i{
+                        position:absolute;
+                        top:-2px;
+                        right:0;
+                        display:none;
+                    }
                 }
+                dd:hover{background-color:#DC3645;color:#fff;font-weight:bold;}
+                .dd{background-color:#DC3645;color:#fff;font-weight:bold;}
             }
             ul{
                 li{
                     float:left;
                     width:240px;
                     height:390px;
-                    border:1px solid #ccc;
-                    margin-top:20px;
+                    margin:20px 5px 0 5px;
+                    transition:box-shadow 0.2s;
                     a{
                         display:block;
                         margin:0 10px;
@@ -187,7 +203,23 @@
                         }
                     }
                 }
+                li:hover{box-shadow:0 5px 20px 10px #ccc;}
             }
         }
+        #page{
+            text-align:center;
+            // display:inline-block;
+            span{
+                display:inline-block;
+                margin:5px;
+                width:40px;
+                line-height:1.8;
+                text-align: center;
+                background-color:#dfdfdf;
+                color:#666;
+            }
+            .active{background-color:#fc0;color:#fff;}
+        }
     }
+    
 }

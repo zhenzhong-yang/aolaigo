@@ -1,11 +1,16 @@
 
 require(['config'],function(){
     require(['jQuery','jquerySession','lycarousel','caidan'],function(){
-        
+
+        console.log($('.goodsNum').val());
         let username = $.session.get('username');
-        console.log(username);
+        // console.log(username);
         let user = $('#user');
         user.html(username);
+
+        let goodsNum = $.session.get('goodsNumber');
+        // console.log(goodsNum);
+        $('.goodsNum').html(goodsNum);
         
         caidan();
 

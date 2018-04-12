@@ -42,10 +42,13 @@ header{
                 float:left;
                 font-size:15px;
                 margin-left:20px;
-                span{
+                color:#C81417;
+                input{
                     display:inline-block;
-                    width:20px;
+                    width:30px;
                     color:#C81417;
+                    font-weight:bold;
+                    background-color:#F0F0F0;
                 }
             }
         }
@@ -100,9 +103,15 @@ header{
             tbody{
                 tr{
                     text-align:center;
-                    border:1px solid #FAFAFA;
+                    border-bottom:1px solid #FAFAFA;
                     .td_two{
                         text-align:left;
+                        #cart_img{
+                            width:60px;
+                            height:60px;
+                            display:inline-block;
+                        }
+                        >p{display:inline-block;margin-right:50px;}
                     }
                     td{
                         font-size:14px;
@@ -133,6 +142,7 @@ header{
         line-height:90px;
         font-size:14px;
         >input{margin-right:20px;}
+        span{margin: 0 50px;font-weight:bold;font-size:20px;em{font-size:20px;font-weight:bold;color:#C81417;}}
         >button{
             width:120px;
             height:45px;

@@ -62,12 +62,15 @@ header .head_top .HT_right > li {
   float: left;
   font-size: 15px;
   margin-left: 20px;
+  color: #C81417;
 }
 
 header .head_top .HT_right > li span {
   display: inline-block;
-  width: 20px;
+  width: 30px;
   color: #C81417;
+  font-weight: bold;
+  background-color: #F0F0F0;
 }
 
 header .head_center {

@@ -56,12 +56,15 @@ header .head_top .HT_right > li {
   float: left;
   font-size: 15px;
   margin-left: 20px;
+  color: #C81417;
 }
 
-header .head_top .HT_right > li span {
+header .head_top .HT_right > li input {
   display: inline-block;
-  width: 20px;
+  width: 30px;
   color: #C81417;
+  font-weight: bold;
+  background-color: #F0F0F0;
 }
 
 header .cart_header_bottom {
@@ -115,11 +118,22 @@ header .cart_header_bottom .cart_header_bottom_r .btn {
 
 .cart_main .cart_main_center > table tbody tr {
   text-align: center;
-  border: 1px solid #FAFAFA;
+  border-bottom: 1px solid #FAFAFA;
 }
 
 .cart_main .cart_main_center > table tbody tr .td_two {
   text-align: left;
+}
+
+.cart_main .cart_main_center > table tbody tr .td_two #cart_img {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+
+.cart_main .cart_main_center > table tbody tr .td_two > p {
+  display: inline-block;
+  margin-right: 50px;
 }
 
 .cart_main .cart_main_center > table tbody tr td {
@@ -159,6 +173,18 @@ header .cart_header_bottom .cart_header_bottom_r .btn {
 
 .cart_main .cart_main_bottom > input {
   margin-right: 20px;
+}
+
+.cart_main .cart_main_bottom span {
+  margin: 0 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cart_main .cart_main_bottom span em {
+  font-size: 20px;
+  font-weight: bold;
+  color: #C81417;
 }
 
 .cart_main .cart_main_bottom > button {

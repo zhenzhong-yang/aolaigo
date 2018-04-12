@@ -5,7 +5,7 @@
             let box = $('.nav_two');console.log(box);
             let tab = $('.nav_two_top').children('ul').children('li');console.log(tab);
             let neirong = $('.nav_two_bottom').children('div');console.log(neirong);
-            // (tab)[0].className = 'aa';
+            (tab)[0].className = 'aa';
             one.on('mouseenter',function(){
                 box.show();
                 // console.log(tab[0])
