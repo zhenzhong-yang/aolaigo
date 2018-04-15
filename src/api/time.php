@@ -6,11 +6,12 @@
     // $page = isset($_GET['page']) ? $_GET['page'] : 1;
     $num = $_GET['num'];
     $pai = $_GET['pai'];
+    $goods_class = $_GET['goods_class'];
 
     if($pai == 'pai'){
         
         // 时间升序
-        $timeSQL = "select * from goods order by goods_time";
+        $timeSQL = "select * from goods where goods.goods_class = '$goods_class' order by goods_time";
         $timeRes = $conn->query($timeSQL)->fetch_all(MYSQL_ASSOC);
 
         // $res = array(
@@ -23,7 +24,7 @@
        echo json_encode($timeRes,JSON_UNESCAPED_UNICODE); 
     }else{
         // 时间降序
-        $timeSQL = "select * from goods Order By goods_time Desc";
+        $timeSQL = "select * from goods where goods.goods_class = '$goods_class' Order By goods_time Desc";
         $timeRes = $conn->query($timeSQL)->fetch_all(MYSQL_ASSOC);
 
         echo json_encode($timeRes,JSON_UNESCAPED_UNICODE);
