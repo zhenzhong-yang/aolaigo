@@ -163,6 +163,11 @@ header .cart_header_bottom .cart_header_bottom_r .btn {
   cursor: pointer;
 }
 
+.cart_main .cart_main_center > table tbody .tr {
+  background-color: #FFF6EB;
+  box-shadow: 0 0.5px 2px 1px #FF3344;
+}
+
 .cart_main .cart_main_bottom {
   height: 90px;
   background-color: #F5F5F5;
