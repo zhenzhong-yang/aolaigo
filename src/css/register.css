@@ -83,6 +83,7 @@ main > .main_r .code {
   border-radius: 5px;
   text-align: center;
   line-height: 32px;
+  cursor: pointer;
 }
 
 main > .main_r button {

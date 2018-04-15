@@ -8,8 +8,11 @@ require(['config'],function(){
         let btn_zhu = $('#btn_zhu');
         // let text = $('#text').val();
         let code = $('.code').html(randomNumber(1000,9999));
-        console.log(code);
+        $('.code').on('click',function(){
+            $('.code').html(randomNumber(1000,9999));
+        });
         let type = 'type';
+
 
         btn_zhu.on('click',function(){
             let phone = $('#phone').val();
