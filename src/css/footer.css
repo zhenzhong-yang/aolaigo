@@ -126,3 +126,35 @@ footer .footer_bottom > p span {
   border-left: 1px solid #666666;
   padding: 0 10px;
 }
+
+footer #filebox {
+  position: fixed;
+  right: 0;
+  top: 25%;
+  z-index: 100000000000000000000000;
+}
+
+footer #filebox li {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+footer #filebox li a {
+  font-size: 20px;
+  color: #333;
+}
+
+footer #filebox li span {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  color: #C81417;
+  font-size: 12px;
+  font-weight: bold;
+}

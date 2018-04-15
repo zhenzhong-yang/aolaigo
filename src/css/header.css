@@ -65,7 +65,7 @@ header .head_top .HT_right > li {
   color: #C81417;
 }
 
-header .head_top .HT_right > li span {
+header .head_top .HT_right > li > span {
   display: inline-block;
   width: 30px;
   color: #C81417;
@@ -225,53 +225,68 @@ header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div ul li {
   height: 80px;
   padding-right: 15px;
   float: left;
-}
-
-header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div ul li > p {
-  display: inline-block;
-}
-
-header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > div > p {
-  height: 90px;
-  text-align: center;
-  line-height: 90px;
-}
-
-header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > div > p > span {
-  width: 96px;
-  height: 31px;
   position: relative;
 }
 
-header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > div > p > span:before {
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div ul li > p {
+  height: 45px;
+}
+
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div ul li > span {
+  font-size: 16px;
+}
+
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div ul li > span > a:hover {
+  color: #C81417;
+}
+
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div ul li .fr {
+  position: absolute;
+  top: 25px;
+  left: 180px;
+}
+
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > .pinpai > .p {
+  height: 90px;
+  line-height: 90px;
+}
+
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > .pinpai > .p > span {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > .pinpai > .p > span:before {
   content: "";
   display: inline-block;
   width: 32px;
   height: 2px;
   background: #000;
   position: absolute;
-  top: 18px;
-  left: -40px;
+  top: 50%;
+  left: 42%;
 }
 
-header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > div > p > span:after {
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > .pinpai > .p > span:after {
   content: "";
   display: inline-block;
   width: 32px;
   height: 2px;
   background: #000;
   position: absolute;
-  top: 18px;
-  right: -40px;
+  top: 50%;
+  right: 42%;
 }
 
-header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > div ul {
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > .pinpai ul {
   width: 1040px;
   height: 145px;
   margin: 0 auto;
 }
 
-header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > div ul li {
+header .head_bottom .nav .nav_one .nav_two .nav_two_bottom > div > .pinpai ul li {
   width: 112px;
   margin: 0 8px;
 }
