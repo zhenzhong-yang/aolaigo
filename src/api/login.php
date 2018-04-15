@@ -16,6 +16,7 @@
         }else{
             $newSQL = "insert into user(user_name,user_password,user_phone) values ('$phone','$password','$phone')";
             $newRES = $conn->query($newSQL);
+            echo "ok";
         }
     }else{
         $username = $_GET["username"];
