@@ -11,6 +11,7 @@ require.config({
         lyzoom:'../lib/jquery-lyZoom/jquery.lyZoom',
         lycarousel:'../lib/jquery-lycarousel/jquery.lyCarousel',
         jquerySession:'../js/jquerySession',
+        fly:'../lib/jquery.fly.min'
     },
 
     // 配置依赖
@@ -18,5 +19,6 @@ require.config({
         lyzoom:['jQuery'],
         lycarousel:['jQuery'],
         jquerySession:['jQuery'],
+        fly:['jQuery'],
     }
 });
